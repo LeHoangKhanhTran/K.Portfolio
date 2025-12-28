@@ -1,0 +1,139 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../assets/fonts/BeVietnam/BeVietnam-Regular.ttf') format('truetype');
+    font-weight: normal; /* Maps to 400 */
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../assets/fonts/BeVietnam/BeVietnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; 
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none; 
+}
+
+
+.scroll-container {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+:root {
+    --primary-text-color: #000000;
+    --hover-text-color: #BEBEBE;
+    color: var(--primary-text-color);
+    font-family: "BeVietnam", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    background: white;
+}
+
+nav a {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 0rem 1.5rem;
+}
+
+.projects-container {
+    position: absolute;
+    top: calc(65px + 86px);
+    display: flex;
+    flex-direction: column;
+    height: 77dvh;
+    overflow-y: scroll;
+}
+
+#blank-space {
+    flex-shrink: 0;
+    width: 100%;
+    height: 35%;
+}
+
+.project-link {
+    display: flex;
+    gap: .5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: fit-content;
+    line-height: 110%;
+}
+
+.project-link .project-category {
+    font-size: 1.5rem;
+    transform: translateY(-12px);
+    text-transform: uppercase;
+}

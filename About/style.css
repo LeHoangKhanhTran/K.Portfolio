@@ -108,7 +108,7 @@ main {
 }
 
 .introduction-container {
-    margin-top: calc(65px + 140px);
+    margin-top: calc(65px);
     display: flex;
     flex-direction: column;
     height: 77dvh;
@@ -120,8 +120,9 @@ main {
     line-height: 110%;
     letter-spacing: -1.92px;
     font-weight: 700;
-    width: 54%;
+    width: 58%;
     overflow-y: scroll;
+    line-break: strict;
 }
 
 

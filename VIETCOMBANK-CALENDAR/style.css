@@ -133,7 +133,7 @@ main {
 }
 
 .project-images {
-    margin-top: 117px;
+    margin: 117px 0;
     padding: 14.75rem;
     display: flex;
     flex-direction: column;

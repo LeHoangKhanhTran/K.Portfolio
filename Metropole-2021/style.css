@@ -68,6 +68,7 @@ table {
     --hover-text-color: #BEBEBE;
     color: var(--primary-text-color);
     font-family: "BeVietnam", sans-serif;
+    overflow-x: hidden;
 }
 
 nav {

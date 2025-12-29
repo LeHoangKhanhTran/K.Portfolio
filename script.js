@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (image) image.remove();
             let projectName = link.getAttribute("data-name");
             const img = document.createElement("img");
-            img.src = `../assets/images/${projectName}/${projectName}-0.png`;
+            img.src = `./assets/images/${projectName}/${projectName}-0.png`;
             img.onload = () => {
                 let randomTop =
                   baseTop +

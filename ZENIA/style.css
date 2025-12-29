@@ -152,6 +152,16 @@ main {
     "ZENIA-16 ZENIA-16";
 }
 
+.img-6-container {
+    position: relative;
+}
+
+#zenia-icon {
+    position: absolute;
+    height: 221px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 #ZENIA-1 {
     grid-area: ZENIA-1;
 }

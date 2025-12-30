@@ -109,10 +109,10 @@ main {
 
 .projects-container {
     position: absolute;
-    top: calc(65px + 86px);
+    top: calc(65px);
     display: flex;
     flex-direction: column;
-    height: 77dvh;
+    height: 88dvh;
     overflow-y: scroll;
 }
 

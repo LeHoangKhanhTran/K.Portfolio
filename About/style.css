@@ -90,7 +90,7 @@ nav {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    align-items: center;
+    align-items: start;
     background: white;
 }
 
@@ -111,7 +111,7 @@ main {
     margin-top: calc(65px);
     display: flex;
     flex-direction: column;
-    height: 77dvh;
+    height: 90dvh;
     overflow-y: scroll;
 }
 

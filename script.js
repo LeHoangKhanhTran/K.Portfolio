@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
               baseTop +
               getRandomCoor(screenHeight - 2 * baseTop - img.height - 20);
             let randomLeft =
-              getRandomCoor(screenWidth - img.width);
+              getRandomCoor(screenWidth - img.width * 1.5);
             img.style.top = `${randomTop}px`;
             img.style.left = `${randomLeft}px`;
             document.body.appendChild(img);

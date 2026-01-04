@@ -149,6 +149,12 @@ main {
     letter-spacing: -0.96px;
 }
 
+.job-position {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
 .experience-container p {
     line-height: 110%;
 }
@@ -159,5 +165,93 @@ main {
 
 #higher-education {
     width: 58%;
+}
+
+@media screen and (max-width: 481px) {
+    nav {
+        padding: 1rem;
+        justify-content: end;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    #blank-space {
+        height: 47%;
+    }   
+
+    .introduction-container {
+        margin-top: calc(65px + 1rem);
+    }
+
+    #introduction {
+        font-size: 26px;
+        letter-spacing: -0.78px;
+        width: 100%;
+        height: 90vh;
+    }
+
+    .experience-container {
+        margin-top: 0rem;
+        flex-direction: column;
+        font-size: 1.125rem;
+    }
+
+    .experience-container > li {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .experience-container > li span {
+        flex-shrink: 0;
+    }
+
+    #higher-education {
+        width: 78%;
+    }
+
+    .job-position {
+        width: 70%;
+        gap: 0;
+    }
+
+    .job-position p {
+        width: fit-content;
+    }
+
+    .sparse {
+        gap: 2rem;
+    }
+
+    footer {
+        padding: 23px 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        font-weight: 700;
+        line-height: 110%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        font-size: 1.125rem;
+        letter-spacing: -0.54px;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    #higher-education {
+        width: 90%;
+    }
+
+    .job-position {
+        width: 55%;
+    }
+
 }
 

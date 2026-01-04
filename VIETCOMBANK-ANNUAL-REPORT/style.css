@@ -218,3 +218,96 @@ footer {
     font-size: 1.25rem;
     letter-spacing: -0.6px;
 }
+
+.mobile-only {
+    display: none;
+}
+
+@media screen and (max-width: 481px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline;
+    }  
+     
+    nav {
+        padding: 1rem;
+    }
+
+    nav h1 {
+        font-size: 1.125rem;
+    }
+
+    main {
+        padding: 0rem 1rem;
+        margin-top: 50%;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+    .project-description {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 4rem;
+    }
+    
+    .description, .project-staff {
+        width: 100%;
+        font-size: 1.125rem;
+    }
+
+    .project-images {
+        padding: 49px 0;
+        row-gap: 1rem;
+        column-gap: 0;
+        grid-template-areas: 
+        "VIETCOMBANK-ANNUAL-REPORT-1 VIETCOMBANK-ANNUAL-REPORT-1"
+        "VIETCOMBANK-ANNUAL-REPORT-2 VIETCOMBANK-ANNUAL-REPORT-2"
+        "VIETCOMBANK-ANNUAL-REPORT-3 VIETCOMBANK-ANNUAL-REPORT-3"
+        "VIETCOMBANK-ANNUAL-REPORT-4 VIETCOMBANK-ANNUAL-REPORT-4"
+        "VIETCOMBANK-ANNUAL-REPORT-5 VIETCOMBANK-ANNUAL-REPORT-5"
+        "VIETCOMBANK-ANNUAL-REPORT-6 VIETCOMBANK-ANNUAL-REPORT-6"
+        "VIETCOMBANK-ANNUAL-REPORT-7 VIETCOMBANK-ANNUAL-REPORT-7"
+        "VIETCOMBANK-ANNUAL-REPORT-8 VIETCOMBANK-ANNUAL-REPORT-8"
+        "VIETCOMBANK-ANNUAL-REPORT-9 VIETCOMBANK-ANNUAL-REPORT-9"
+        "VIETCOMBANK-ANNUAL-REPORT-10 VIETCOMBANK-ANNUAL-REPORT-10"
+        "VIETCOMBANK-ANNUAL-REPORT-11 VIETCOMBANK-ANNUAL-REPORT-11"; 
+    }
+
+    #zenia-icon {
+        height: 100px;
+    }
+
+    #more-work {
+        display: none;
+    }
+
+    footer {
+        padding: 23px 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        font-weight: 700;
+        line-height: 110%;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        font-size: 1.125rem;
+        letter-spacing: -0.54px;
+    }
+}
+
+

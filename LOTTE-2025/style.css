@@ -201,3 +201,87 @@ footer {
     font-size: 1.25rem;
     letter-spacing: -0.6px;
 }
+
+.mobile-only {
+    display: none;
+}
+
+@media screen and (max-width: 481px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline;
+    }  
+     
+    nav {
+        padding: 1rem;
+    }
+
+    nav h1 {
+        font-size: 1.125rem;
+    }
+
+    main {
+        padding: 0rem 1rem;
+        margin-top: 50%;
+    }
+
+    #logo {
+        width: 80px;
+    }
+
+    .project-description {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 4rem;
+    }
+    
+    .description, .project-staff {
+        width: 100%;
+        font-size: 1.125rem;
+    }
+
+    .project-images {
+        padding: 49px 0;
+        gap: 1rem;
+        grid-template-areas: 
+        "Lotte-2025-1 Lotte-2025-1"
+        "Lotte-2025-2 Lotte-2025-2"
+        "Lotte-2025-3 Lotte-2025-3"
+        "Lotte-2025-4 Lotte-2025-4"
+        "Lotte-2025-5 Lotte-2025-5"
+        "Lotte-2025-6 Lotte-2025-6"
+        "Lotte-2025-7 Lotte-2025-7"
+        "Lotte-2025-8 Lotte-2025-8";  
+    }
+
+    #more-work {
+        display: none;
+    }
+
+    footer {
+        padding: 23px 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        font-weight: 700;
+        line-height: 110%;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        font-size: 1.125rem;
+        letter-spacing: -0.54px;
+    }
+}
+

@@ -173,6 +173,10 @@ main {
         justify-content: end;
     }
 
+    #logo {
+        width: 80px;
+    }
+
     #contact {
         display: none;
     }

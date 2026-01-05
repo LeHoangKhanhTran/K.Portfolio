@@ -167,7 +167,7 @@ main {
     width: 58%;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 921px) {
     nav {
         padding: 1rem;
         justify-content: end;

@@ -110,7 +110,7 @@ main {
 
 .projects-container {
     position: relative;
-    top: calc(65px + 1.5rem);
+    top: 65px;
     display: flex;
     flex-direction: column;
     height: 88dvh;
@@ -120,7 +120,7 @@ main {
 #blank-space {
     flex-shrink: 0;
     width: 100%;
-    height: 43%;
+    height: 47.5%;
 }
 
 .project-link {
@@ -149,9 +149,9 @@ main {
     display: none;
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 921px) {
     body {
-        overflow-y: auto    ;
+        overflow-y: auto;
     }  
 
     .mobile-only {

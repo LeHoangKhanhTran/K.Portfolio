@@ -1,5 +1,6 @@
 const baseTop = 65;
-
+const maxImageWidth = 381;
+const maxImageHeight = 303;
 document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll(".project-link");
     const screenHeight = screen.height;
@@ -18,10 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
           img.src = `./assets/images/${projectName}/${projectName}-0.png`;
           img.className = "preview-img";
           img.id = "project-img";
-          await img.decode();
           let randomTop =
-            baseTop + getRandomCoor(screenHeight - 2 * baseTop - img.height);
-          let randomLeft = getRandomCoor(screenWidth - img.width);
+            baseTop + getRandomCoor(screenHeight - 2 * baseTop - maxImageHeight);
+          let randomLeft = getRandomCoor(screenWidth - maxImageWidth);
           img.style.top = `${randomTop}px`;
           img.style.left = `${randomLeft}px`;
           document.body.appendChild(img);
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         link.addEventListener("mouseleave", () => {
           link.style.color = "var(--primary-text-color)";
           const image = document.getElementById("project-img");
-          image.remove();
+          if (image) image.remove();
         });
       });
     } else {
@@ -47,10 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
             img.src = `./assets/images/${projectName}/${projectName}-0.png`;
             img.className = "preview-img";
             img.id = "project-img";
-            await img.decode();
             let randomTop =
-              baseTop + getRandomCoor(screenHeight - 2 * baseTop - img.height);
-            let randomLeft = getRandomCoor(screenWidth - img.width);
+              baseTop + getRandomCoor(screenHeight - 2 * baseTop - maxImageHeight);
+            let randomLeft = getRandomCoor(screenWidth - maxImageWidth);
             img.style.top = `${randomTop}px`;
             img.style.left = `${randomLeft}px`;
             document.body.appendChild(img);

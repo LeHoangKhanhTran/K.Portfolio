@@ -167,6 +167,26 @@ main {
     width: 58%;
 }
 
+footer {
+    padding: 23px 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    letter-spacing: -0.6px;
+}
+
+.mobile-only {
+    display: none;
+}
+
 @media screen and (max-width: 921px) {
     nav {
         padding: 1rem;

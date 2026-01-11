@@ -1,68 +1,93 @@
-const baseTop = 65;
-const maxImageWidth = 381;
-const maxImageHeight = 303;
 document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll(".project-link");
-    const screenHeight = screen.height;
-    const screenWidth = screen.width;
-    let currentProject = null;
-    if (screenWidth > 961) {
-      links.forEach((link) => {
-        link.addEventListener("mouseenter", async () => {
-          link.style.color = "var(--hover-text-color)";
-          const images = document.getElementsByClassName("preview-img");
-          if (images.length > 0) {
-            images.forEach((img) => img.remove());
-          }
-          let projectName = link.getAttribute("data-name");
-          const img = document.createElement("img");
-          img.src = `./assets/images/${projectName}/${projectName}-0.png`;
-          img.className = "preview-img";
-          img.id = "project-img";
-          let randomTop =
-            baseTop + getRandomCoor(screenHeight - 2 * baseTop - maxImageHeight);
-          let randomLeft = getRandomCoor(screenWidth - maxImageWidth);
-          img.style.top = `${randomTop}px`;
-          img.style.left = `${randomLeft}px`;
-          document.body.appendChild(img);
-        });
+  const projectsContainer = document.querySelector(".projects-container");
+  const images = Array.from(document.getElementsByClassName("project-image"));
+  let clientX = 0;
+  let isMouseDown = false;
+  let velocity = 0;
+  let rafId = null;
 
-        link.addEventListener("mouseleave", () => {
-          link.style.color = "var(--primary-text-color)";
-          const image = document.getElementById("project-img");
-          if (image) image.remove();
-        });
+  const FRICTION = 0.975;
+  const MIN_VELOCITY = 0.1;
+
+  images.forEach((img) => {
+    const initialWidth = img.width;
+    img.addEventListener("mouseover", () => {
+      if (initialWidth > 0) {
+        img.style.width = (initialWidth * 1.75).toString() + "px";
+      }
+    });
+    
+    img.addEventListener("mouseout", () => {
+      if (initialWidth > 0) {
+
+       img.style.width = initialWidth.toString() + "px"; 
+      }
+    });
+  })
+
+  projectsContainer.addEventListener("pointerdown", (e) => {
+    isMouseDown = true;
+    clientX = e.clientX;
+    velocity = 0;
+    cancelAnimationFrame(rafId);
+    projectsContainer.setPointerCapture(e.pointerId);
+  });
+
+
+  projectsContainer.addEventListener("pointermove", (e) => {
+    if (isMouseDown) {
+      let newClientX = e.clientX;
+      const dx = clientX - newClientX;
+      projectsContainer.scrollBy({
+        left: clientX - newClientX,
       });
-    } else {
-      links.forEach((link) => {
-        link.addEventListener("click", async (e) => {
-          let projectName = link.getAttribute("data-name");
-          if (projectName !== currentProject) {
-            e.preventDefault();
-            currentProject = projectName;
-            document
-              .querySelectorAll(".preview-img")
-              .forEach((img) => img.remove());
-            const img = document.createElement("img");
-            img.src = `./assets/images/${projectName}/${projectName}-0.png`;
-            img.className = "preview-img";
-            img.id = "project-img";
-            let randomTop =
-              baseTop + getRandomCoor(screenHeight - 2 * baseTop - maxImageHeight);
-            let randomLeft = getRandomCoor(screenWidth - maxImageWidth);
-            img.style.top = `${randomTop}px`;
-            img.style.left = `${randomLeft}px`;
-            document.body.appendChild(img);
-            img.addEventListener("click", () => {
-                window.location.href = link.href;
-            })
-          }
-        });
+      velocity = dx;
+      clientX = newClientX;
+      images.forEach((img) => {
+        const rect = img.getBoundingClientRect();
+        const startPoint = rect.left;
+        const endPoint = rect.right;
+        if (startPoint <= newClientX && endPoint >= newClientX) {
+          img.style.width = rect.width  + "px";
+        }
       });
     }
-    
+  })
+
+  projectsContainer.addEventListener("pointerup", (e) => {
+    if (isMouseDown && velocity === 0) {
+      images.forEach((img) => {
+        const rect = img.getBoundingClientRect();
+        const startPoint = rect.left;
+        const endPoint = rect.right;
+        if (startPoint <= e.clientX && endPoint >= e.clientX) {
+          window.location.href = img.getAttribute("data-url");
+        }
+      });
+    }
+    isMouseDown = false;
+    images.forEach((img) => {
+      img.style.pointerEvents = "all";
+    });
+
+    applyInertia();
+  })
+
+  document.addEventListener("pointercancel", () => {
+    isMouseDown = false;
+    images.forEach((img) => {
+      img.style.pointerEvents = "none";
+    });
+  })
+
+  function applyInertia() {
+    if (Math.abs(velocity) < MIN_VELOCITY) return;
+
+    velocity *= FRICTION;
+    projectsContainer.scrollLeft += velocity;
+
+    rafId = requestAnimationFrame(applyInertia);
+  }
+
 })
 
-function getRandomCoor(max) {
-    return Math.random() * max;
-}

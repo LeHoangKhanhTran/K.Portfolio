@@ -158,6 +158,8 @@ main {
 
 #Metropole-2023-2 {
     grid-area: Metropole-2023-2;
+    width: 100%;
+    height: auto;
 }
 
 #Metropole-2023-3 {

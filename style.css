@@ -105,287 +105,114 @@ nav a {
 }
 
 main {
-    padding: 0rem 1.5rem;
+    padding: 2rem 1.5rem;
+    height: 100dvh;
+    display: flex;
+    align-items: end;
+    box-sizing: border-box;
 }
 
 .projects-container {
-    position: relative;
-    top: calc(65px + .5rem);
+    display: flex;
+    gap: .5rem;
+    max-width: 100dvw;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    cursor: url("https://cristianoliva-studio.com/wp-content/themes/cristianoliva/dist/bundle/5bf4702b96daeb154898.svg") 0 0, auto;
+}
+
+.projects-container::-webkit-scrollbar {
+    display: none;
+}
+
+.projects {
     display: flex;
     flex-direction: column;
-    height: 90dvh;
-    overflow-y: scroll;
+    gap: 1.5rem;
+    justify-content: end;
 }
 
-#blank-space {
-    flex-shrink: 0;
-    width: 100%;
-    height: 45%;
-}
-
-.project-link {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    width: fit-content;
-    line-height: 76%;
-}
-
-.project-category {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.5rem;
-    transform: translateY(-31px);
+.projects span {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.72px;
     text-transform: uppercase;
 }
 
-#project-img {
-    position: fixed;
+.image-group {
+   display: flex;
+   align-items: end;
+   gap: .5rem;
 }
 
-.mobile-only {
-    display: none;
+img {
+    user-select: none;
+    transition: width .5s;
 }
 
-.n1045 {
-    display: none;
+#EU-Film-Festival {
+    width: 236px;
 }
 
-.n963 {
-    display: none;
+#EVSDA {
+    width: 235px;
 }
 
-.n840 {
-    display: none;
+#Airmaxday {
+    width: 236px;
 }
 
-.n622 {
-    display: none;
+#Inca-Gifset {
+    width: 355px;
 }
 
-.n614 {
-    display: none;i
+#Metropole-2021 {
+    width: 235px;
 }
 
-.n574 {
-    display: none;
+#Metropole-2023 {
+    width: 355px;
 }
 
-.n538 {
-    display: none;
+#Lotte-Mooncake {
+    width: 236px;
 }
 
-.n710 {
-    display: none
+#Cat-Tuong-Giftset {
+    width: 235px;
 }
 
-.n336 {
-        display: none;
+#ZENIA {
+    width: 235px;
 }
 
-.n362 {
-        display: none;
+#Hateco {
+    width: 235px;
 }
 
-@media screen and (max-width: 1301px) {
-    .project-link {
-        font-size: 2.8rem;
-    }
-
-    .project-category {
-        font-size: 1rem;
-        transform: translateY(-22px);
-    }
+#NK-Properties {
+    width: 235px;
 }
 
-@media screen and (max-width: 1031px) {
-    .tablet-only {
-        display: inline;
-    }
-    
-    .project-link {
-        line-height: 85%;
-    }
-
-    .project-category {
-        transform: translateY(-23px);
-    }
+#Thuan-An {
+    width: 355px;
 }
 
-@media screen and (max-width: 828px) {
-    .mobile-only {
-        display: inline;
-    }
-
-    body {
-        overflow-y: auto;
-    }    
-     
-    nav {
-        padding: 1rem;
-    }
-
-    nav a {
-        font-size: 1.5rem;
-    }
-
-    main {
-        padding: 0rem 1rem;
-    }
-
-    #logo {
-        width: 60px;
-    }
-
-    #blank-space {
-        height: 37.8%;
-    }
-
-    .projects-container {
-        top: calc(65px + 8px);
-        height: 90dvh;
-    }
-
-    .project-link {
-        font-size: 2.9rem;
-        line-height: 100%;
-    }
-
-    .project-category {
-        transform: translateY(-25px);
-        font-size: 1rem;
-    }
-
-    .preview-img {
-        transform: scale(90%);
-    }
-
-    footer {
-        margin-top: 100px;
-        padding: 23px 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        font-weight: 700;
-        line-height: 110%;
-    }
-
-    .flex {
-        display: flex;
-    }
-
-    .contact {
-        display: flex;
-        flex-direction: column;
-        gap: .25rem;
-        font-size: 1.125rem;
-        letter-spacing: -0.54px;
-    }
+#Vietcombank-Calendar-2026 {
+    width: 235px;
 }
 
-@media screen and (max-width: 643px) { 
-    .project-link {
-        font-size: 2.3rem;
-    }
-    
+#Sumimoto-Calendar-2024 {
+    width: 235px;
 }
 
-@media screen and (max-width: 561px) {
-    .project-link {
-        font-size: 26px;
-        line-height: 100%;
-    }
-
-    .project-category {
-        transform: translateY(-10.5px);
-        font-size: .7rem;
-    }
+#Vietcombank-Annual-Report {
+    width: 235px;
 }
 
-@media screen and (max-width: 1045px) {
-    .n1045 {
-        display: inline;
-    }
-
+#MBBank-Annual-Report {
+    width: 235px;
 }
-
-@media screen and (max-width: 963px) {
-    .n963 {
-        display: inline;
-    }
-}
-
-@media screen and (max-width: 840px) {
-    .n840 {
-        display: inline;
-    }
-
-    .project-category {
-        font-size: .75rem;
-        transform: translateY(-15px);
-    }
-}
-
-@media screen and (max-width: 832px) {
-    .project-link {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 710px) {
-    .n710 {
-        display: inline;
-    }
-}
-
-@media screen and (max-width: 622px) {
-    .n622 {
-        display: inline;
-    }
-}
-
-@media screen and (max-width: 614px) {
-    .n614 {
-        display: inline;
-    }
-}
-
-@media screen and (max-width: 574px) {
-    .n574 {
-        display: inline;
-    }
-}
-
-@media screen and (max-width: 538px) {
-    .n538 {
-        display: inline;
-    }
-    
-    .project-link {
-        font-size: 20px;
-    }
-
-    .project-category {
-        font-size: .6rem;
-        transform: translateY(-7px);
-    }
-}
-
-@media screen and (max-width: 362px) {
-    #vcb {
-        display: none;
-    }
-    .n362 {
-        display: inline;
-    }
-}
-
-@media screen and (max-width: 336px) {
-    .n336 {
-        display: inline;
-    }
-}
-
-

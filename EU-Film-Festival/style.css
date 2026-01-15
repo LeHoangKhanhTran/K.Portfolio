@@ -254,7 +254,7 @@ footer {
     }  
      
     nav {
-        padding: 1rem;
+        padding: 1rem 10px;
     }
 
     nav h1 {
@@ -262,7 +262,7 @@ footer {
     }
 
     main {
-        padding: 0rem 1rem;
+        padding: 0rem 10px;
         margin-top: 50%;
     }
 
@@ -275,12 +275,17 @@ footer {
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: flex-end;
-        gap: 4rem;
+        gap: 3rem;
     }
     
-    .description, .project-staff {
+    .description {
         width: 100%;
         font-size: 1.125rem;
+    }
+
+    .project-staff {
+        width: 100%;
+        font-size: .75rem;
     }
 
     .project-images {

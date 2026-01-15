@@ -188,8 +188,12 @@ footer {
 }
 
 @media screen and (max-width: 921px) {
+    main {
+        padding: 0rem 10px;
+    }
+
     nav {
-        padding: 1rem;
+        padding: 1rem 10px;
         justify-content: end;
     }
 

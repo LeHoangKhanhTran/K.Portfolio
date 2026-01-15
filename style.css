@@ -216,3 +216,21 @@ img {
 #MBBank-Annual-Report {
     width: 235px;
 }
+
+@media screen and (max-width: 921px) {
+    main {
+        padding: 2rem 10px;
+    }
+
+    nav {
+        padding: 1rem 10px;
+    }
+
+    nav a {
+        font-size: 1.125rem;
+    }
+
+    #logo {
+        width: 60px;
+    }
+}

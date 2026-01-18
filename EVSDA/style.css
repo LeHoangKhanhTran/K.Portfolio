@@ -337,7 +337,7 @@ footer {
     }
 
     .images-grid-0 {
-        gap: 1rem;
+        gap: 10px;
         grid-template-areas: 
         "EVSDA-2 EVSDA-2"
         "EVSDA-3 EVSDA-4"
@@ -345,7 +345,7 @@ footer {
     }
 
     .images-grid-1 {
-        gap: 1rem;
+        gap: 10px;
         grid-template-areas: 
         "EVSDA-6 EVSDA-6"
         "mobile-phone mobile-phone"
@@ -354,7 +354,7 @@ footer {
     }
 
     .images-grid-2 {
-        gap: 1rem;
+        gap: 10px;
         grid-template-areas: 
         "EVSDA-gif-1 EVSDA-gif-1"
         "EVSDA-10 EVSDA-gif-2"

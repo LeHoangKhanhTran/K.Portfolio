@@ -134,7 +134,7 @@ main {
 .project-images {
     padding: 49px 0;
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "img-1 img-1"
@@ -290,7 +290,7 @@ footer {
 
     .project-images {
         padding: 49px 0;
-        gap: .75rem;
+        gap: 10px;
         grid-template-areas: 
         "img-1 img-1"
         "gif-0 gif-0"

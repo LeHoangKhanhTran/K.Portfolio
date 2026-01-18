@@ -266,7 +266,7 @@ footer {
 
     .project-images {
         padding: 49px 0;
-        row-gap: 1rem;
+        row-gap: 10px;
         column-gap: 0;
         grid-template-areas: 
         "MBBANK-ANNUAL-REPORT-1 MBBANK-ANNUAL-REPORT-1"

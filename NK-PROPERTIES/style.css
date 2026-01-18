@@ -278,7 +278,7 @@ footer {
 
     .project-images {
         padding: 49px 0;
-        gap: 1rem;
+        gap: 10px;
         grid-template-areas: 
         "NK-PROPERTIES-1 NK-PROPERTIES-1"
         "NK-PROPERTIES-2 NK-PROPERTIES-2"

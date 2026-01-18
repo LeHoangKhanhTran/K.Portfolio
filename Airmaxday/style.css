@@ -281,7 +281,7 @@ footer {
 
     .project-images {
         padding: 49px 0;
-        gap: 1rem;
+        gap: 10px;
         grid-template-areas: 
         "airmaxday-gif-0 airmaxday-gif-0"
         "airmaxday-1 airmaxday-1"

@@ -253,7 +253,7 @@ footer {
 
     .project-images {
         padding: 49px 0;
-        gap: 1rem;
+        gap: 10px;
         grid-template-areas: 
         "Lotte-2025-1 Lotte-2025-1"
         "Lotte-2025-2 Lotte-2025-2"

@@ -9,22 +9,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const FRICTION = 0.975;
   const MIN_VELOCITY = 0.1;
 
-  images.forEach((img) => {
-    const initialWidth = img.width;
-    img.addEventListener("mouseover", () => {
-      if (initialWidth > 0) {
-        img.style.width = (initialWidth * 1.75).toString() + "px";
-      }
-    });
-    
-    img.addEventListener("mouseout", () => {
-      if (initialWidth > 0) {
+  if (screen.width > 1024) {
+    images.forEach((img) => {
+      const initialWidth = img.width;
+      img.addEventListener("mouseover", () => {
+        if (initialWidth > 0) {
+          img.style.width = (initialWidth * 1.75).toString() + "px";
+        }
+      });
 
-       img.style.width = initialWidth.toString() + "px"; 
-      }
+      img.addEventListener("mouseout", () => {
+        if (initialWidth > 0) {
+          img.style.width = initialWidth.toString() + "px";
+        }
+      });
     });
-  })
-
+  }
+  
   projectsContainer.addEventListener("pointerdown", (e) => {
     isMouseDown = true;
     clientX = e.clientX;

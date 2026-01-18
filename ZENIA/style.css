@@ -303,7 +303,7 @@ footer {
 
     .project-images {
         padding: 49px 0;
-        row-gap: 1rem;
+        row-gap: 10px;
         column-gap: 0;
         grid-template-areas: 
         "ZENIA-1 ZENIA-1"

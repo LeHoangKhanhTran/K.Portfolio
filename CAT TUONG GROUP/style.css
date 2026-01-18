@@ -304,7 +304,7 @@ footer {
 
     .project-images {
         padding: 49px 0;
-        gap: 1rem;
+        gap: 10px;
         grid-template-areas: 
         "CAT-TUONG-GROUP-1 CAT-TUONG-GROUP-1"
         "CAT-TUONG-GROUP-2 CAT-TUONG-GROUP-2"

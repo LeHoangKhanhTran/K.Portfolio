@@ -266,7 +266,7 @@ footer {
 
     .project-images {
         padding: 49px 0;
-        gap: 1rem;
+        gap: 10px;
         grid-template-areas: 
         "INCA-GIFTSET-1 INCA-GIFTSET-1"
         "INCA-GIFTSET-2 INCA-GIFTSET-2"

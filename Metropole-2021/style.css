@@ -283,7 +283,7 @@ footer {
 
     .project-images {
         padding: 49px 0;
-        gap: 1rem;
+        gap: 10px;
         grid-template-areas: 
         "Metropole-2021-1 Metropole-2021-1"
         "Metropole-2021-2 Metropole-2021-2"

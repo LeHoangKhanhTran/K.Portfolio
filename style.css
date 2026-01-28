@@ -217,6 +217,10 @@ img {
     width: 235px;
 }
 
+#Sodick-Calendar-2021 {
+    width: 375px;
+}
+
 @media screen and (max-width: 921px) {
     main {
         padding: 2rem 10px;

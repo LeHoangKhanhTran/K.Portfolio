@@ -1,0 +1,322 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../assets/fonts/BeVietnam/BeVietnam-Regular.ttf') format('truetype');
+    font-weight: normal; /* Maps to 400 */
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'BeVietnam';
+    src: url('../assets/fonts/BeVietnam/BeVietnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; 
+}
+
+
+:root {
+    --primary-text-color: #000000;
+    --hover-text-color: #BEBEBE;
+    color: var(--primary-text-color);
+    font-family: "BeVietnam", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    background: white;
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+}
+
+main {
+    padding: 0rem 1.5rem;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.72px
+}
+
+.project-description {
+    margin-top: 14.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.project-staff {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    width: 30%;
+    flex-shrink: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.staff-section {
+    line-height: 110%;
+    letter-spacing: -0.72px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 2rem;
+    width: 55%;
+    line-height: 110%;
+    letter-spacing: -0.96px;
+}
+
+.project-images {
+    padding: 49px 0;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+    "Sodick-Calendar-2021-1"
+    "Sodick-Calendar-2021-2"
+    "Sodick-Calendar-2021-3"
+    "Sodick-Calendar-2021-4"
+    "Sodick-Calendar-2021-5"
+    "Sodick-Calendar-2021-6"
+    "Sodick-Calendar-2021-7"
+    "Sodick-Calendar-2021-8"
+    "Sodick-Calendar-2021-9"
+    "Sodick-Calendar-2021-10"
+    "Sodick-Calendar-2021-11"
+    "Sodick-Calendar-2021-12";
+}
+
+#Sodick-Calendar-2021-1 {
+    grid-area: Sodick-Calendar-2021-1;
+}
+
+#Sodick-Calendar-2021-2 {
+    grid-area: Sodick-Calendar-2021-2;
+}
+
+#Sodick-Calendar-2021-3 {
+    grid-area: Sodick-Calendar-2021-3;
+}
+
+#Sodick-Calendar-2021-4 {
+    grid-area: Sodick-Calendar-2021-4;
+}
+
+#Sodick-Calendar-2021-5 {
+    grid-area: Sodick-Calendar-2021-5;
+}
+
+#Sodick-Calendar-2021-6 {
+    grid-area: Sodick-Calendar-2021-6;
+}
+
+#Sodick-Calendar-2021-7 {
+    grid-area: Sodick-Calendar-2021-7;
+}
+
+#Sodick-Calendar-2021-8 {
+    grid-area: Sodick-Calendar-2021-8;
+}
+
+#Sodick-Calendar-2021-9 {
+    grid-area: Sodick-Calendar-2021-9;
+}
+
+#Sodick-Calendar-2021-10 {
+    grid-area: Sodick-Calendar-2021-10;
+}
+
+#Sodick-Calendar-2021-11 {
+    grid-area: Sodick-Calendar-2021-11;
+}
+
+#Sodick-Calendar-2021-12 {
+    grid-area: Sodick-Calendar-2021-12;
+}
+
+.project-images img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    padding: 23px 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+#more-work {
+    font-size: 2rem;
+    letter-spacing: -0.96px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    letter-spacing: -0.6px;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media screen and (max-width: 921px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline;
+    }  
+     
+    nav {
+        padding: 1rem 10px;
+    }
+
+    nav h1 {
+        font-size: 1.125rem;
+    }
+
+    main {
+        padding: 0rem 10px;
+        margin-top: 50%;
+    }
+
+    #logo {
+        width: 60px;
+    }
+
+    .project-description {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 3rem;
+    }
+    
+    .description {
+        width: 100%;
+        font-size: 1.125rem;
+    }
+
+    .project-staff {
+        width: 100%;
+        font-size: .75rem;
+    }
+
+
+    .project-images {
+        padding: 49px 0;
+        row-gap: 10px;
+        column-gap: 0;
+        grid-template-areas: 
+        "Sodick-Calendar-2021-1"
+        "Sodick-Calendar-2021-2"
+        "Sodick-Calendar-2021-3"
+        "Sodick-Calendar-2021-4"
+        "Sodick-Calendar-2021-5"
+        "Sodick-Calendar-2021-6"
+        "Sodick-Calendar-2021-7"
+        "Sodick-Calendar-2021-8"
+        "Sodick-Calendar-2021-9"
+        "Sodick-Calendar-2021-10"
+        "Sodick-Calendar-2021-11"
+        "Sodick-Calendar-2021-12"; 
+    }
+
+    #more-work {
+        display: none;
+    }
+
+    footer {
+        padding: 23px 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        font-weight: 700;
+        line-height: 110%;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        font-size: 1.125rem;
+        letter-spacing: -0.54px;
+    }
+}
+
+

@@ -112,6 +112,22 @@ main {
     box-sizing: border-box;
 }
 
+#main-text {
+    position: absolute;
+    top: calc(90.13px - 1.5rem);
+    right: 1.5rem;
+    font-size: 12.5rem;
+    font-weight: bold;
+}
+
+#main-text span {
+    display: inline-block;
+    margin-left: .25rem;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-text-color);
+}
+
 .projects-container {
     display: flex;
     gap: .5rem;
@@ -221,7 +237,7 @@ img {
     width: 375px;
 }
 
-@media screen and (max-width: 921px) {
+@media screen and (max-width: 979px) {
     main {
         padding: 2rem 10px;
     }
@@ -236,5 +252,116 @@ img {
 
     #logo {
         width: 60px;
+    }
+
+    .projects span {
+        font-size: 1.125rem;
+    }
+
+    .image-group {
+        gap: 10px
+    }
+
+    #main-text {
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+        font-size: 12rem;
+        width: 100dvw;
+    }
+
+    #main-text span {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #main-text {
+        font-size: 7rem;
+    }
+
+    #main-text span {
+        width: 15px;
+        height: 15px;
+    }
+
+    #EU-Film-Festival {
+    width: 186px;
+}
+
+    #EVSDA {
+        width: 185px;
+    }
+
+    #Airmaxday {
+        width: 186px;
+    }
+
+    #Inca-Gifset {
+        width: 305px;
+    }
+
+    #Metropole-2021 {
+        width: 185px;
+    }
+
+    #Metropole-2023 {
+        width: 305px;
+    }
+
+    #Lotte-Mooncake {
+        width: 186px;
+    }
+
+    #Cat-Tuong-Giftset {
+        width: 185px;
+    }
+    
+    #ZENIA {
+        width: 185px;
+    }
+    
+    #Hateco {
+        width: 185px;
+    }
+    
+    #NK-Properties {
+        width: 185px;
+    }
+    
+    #Thuan-An {
+        width: 305px;
+    }
+    
+    #Vietcombank-Calendar-2026 {
+        width: 185px;
+    }
+    
+    #Sumimoto-Calendar-2024 {
+        width: 185px;
+    }
+    
+    #Vietcombank-Annual-Report {
+        width: 185px;
+    }
+    
+    #MBBank-Annual-Report {
+        width: 185px;
+    }
+    
+    #Sodick-Calendar-2021 {
+        width: 325px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #main-text {
+        font-size: 6.45rem;
+    }
+
+    #main-text span {
+        width: 15px;
+        height: 15px;
     }
 }

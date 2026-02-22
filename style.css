@@ -116,8 +116,9 @@ main {
     position: absolute;
     top: calc(90.13px - 1.5rem);
     right: 1.5rem;
-    font-size: 12.5rem;
+    font-size: 14.5rem;
     font-weight: bold;
+    letter-spacing: -5%;
 }
 
 #main-text span {
@@ -165,6 +166,8 @@ main {
 }
 
 img {
+    position: relative;
+    z-index: 100;
     user-select: none;
     transition: width .5s;
 }

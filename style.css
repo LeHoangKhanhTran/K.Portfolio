@@ -116,14 +116,14 @@ main {
     position: absolute;
     top: calc(90.13px - 1.5rem);
     right: 1.5rem;
-    font-size: 14.5rem;
+    font-size: 16rem;
     font-weight: bold;
-    letter-spacing: -5%;
+    letter-spacing: -0.05em;
 }
 
 #main-text span {
     display: inline-block;
-    margin-left: .25rem;
+    margin-left: 1rem;
     width: 30px;
     height: 30px;
     background-color: var(--primary-text-color);

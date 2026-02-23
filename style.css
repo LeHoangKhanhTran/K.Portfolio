@@ -225,7 +225,8 @@ img {
 }
 
 #Sumimoto-Calendar-2024 {
-    width: 235px;
+    width: 365px;
+    clip-path: inset(37.15% 0 0 0);
 }
 
 #Vietcombank-Annual-Report {

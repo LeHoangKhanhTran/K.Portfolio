@@ -105,7 +105,7 @@ nav a {
 }
 
 main {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0 2rem 1.5rem;
     height: 100dvh;
     display: flex;
     align-items: end;
@@ -225,8 +225,7 @@ img {
 }
 
 #Sumimoto-Calendar-2024 {
-    width: 365px;
-    clip-path: inset(37.15% 0 0 0);
+    width: 236px;
 }
 
 #Vietcombank-Annual-Report {
@@ -238,7 +237,7 @@ img {
 }
 
 #Sodick-Calendar-2021 {
-    width: 375px;
+    width: 355px;
 }
 
 @media screen and (max-width: 979px) {
@@ -290,71 +289,71 @@ img {
     }
 
     #EU-Film-Festival {
-        width: 186px;
+        width: 206px;
     }
 
     #EVSDA {
-        width: 185px;
+        width: 206px;
     }
 
     #Airmaxday {
-        width: 186px;
+        width: 206px;
     }
 
     #Inca-Gifset {
-        width: 305px;
+        width: 310px;
     }
 
     #Metropole-2021 {
-        width: 185px;
+        width: 206px;
     }
 
     #Metropole-2023 {
-        width: 305px;
+        width: 310px;
     }
 
     #Lotte-Mooncake {
-        width: 186px;
+        width: 206px;
     }
 
     #Cat-Tuong-Giftset {
-        width: 185px;
+        width: 206px;
     }
     
     #ZENIA {
-        width: 185px;
+        width: 206px;
     }
     
     #Hateco {
-        width: 185px;
+        width: 206px;
     }
     
     #NK-Properties {
-        width: 185px;
+        width: 206px;
     }
     
     #Thuan-An {
-        width: 305px;
+        width: 310px;
     }
     
     #Vietcombank-Calendar-2026 {
-        width: 185px;
+        width: 206px;
     }
     
     #Sumimoto-Calendar-2024 {
-        width: 185px;
+        width: 206px;
     }
     
     #Vietcombank-Annual-Report {
-        width: 185px;
+        width: 206px;
     }
     
     #MBBank-Annual-Report {
-        width: 185px;
+        width: 206px;
     }
     
     #Sodick-Calendar-2021 {
-        width: 325px;
+        width: 310px;
     }
 }
 

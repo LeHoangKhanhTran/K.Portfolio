@@ -168,7 +168,7 @@ main {
 }
 
 footer {
-    padding: 23px 1.5rem;
+    padding: 5rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -176,11 +176,35 @@ footer {
     line-height: 110%;
 }
 
-.contact {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.25rem;
-    letter-spacing: -0.6px;
+#more-work {
+    font-size: 2rem;
+    letter-spacing: -0.96px;
+}
+
+#what-i-do {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: -3%;
+    line-height: 110%;
+    margin-bottom: 2.75rem;
+}
+
+.categories {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
 }
 
 .mobile-only {
@@ -188,6 +212,14 @@ footer {
 }
 
 @media screen and (max-width: 921px) {
+    .mobile-only {
+        display: inline;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
     main {
         padding: 0rem 10px;
     }
@@ -224,6 +256,7 @@ footer {
         margin-top: 0rem;
         flex-direction: column;
         font-size: 1.125rem;
+        padding-bottom: 10rem;
     }
 
     .experience-container > li {
@@ -253,6 +286,48 @@ footer {
         gap: 2rem;
     }
 
+    .grid {
+        gap: 10px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: 
+        "div1 div1 img1 img1 img1 img2 img2 img2"
+        "img3 img3 img3 img4 img4 img4 div2 div2";
+    }
+
+    .div1 {
+        grid-area: div1;
+    }
+
+    .div2 {
+        grid-area: div2;
+    }
+
+    #about-1 {
+        grid-area: img1;
+    }
+
+    #about-2 {
+        grid-area: img2;
+    }
+
+    #about-3 {
+        grid-area: img3;
+    }
+
+    #about-4 {
+        grid-area: img4;
+    }
+
+    #what-i-do {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+    }
+
+    .categories {
+        font-size: 26px;
+        margin-bottom: 1.5rem;
+    }
+    
     footer {
         padding: 23px 1rem;
         display: flex;
@@ -262,16 +337,11 @@ footer {
         line-height: 110%;
     }
 
-    .contact {
-        display: flex;
-        flex-direction: column;
-        gap: .25rem;
-        font-size: 1.125rem;
-        letter-spacing: -0.54px;
+    #more-work {
+        display: none;
     }
-
 }
-
+    
 @media screen and (max-width: 390px) {
     #higher-education {
         width: 90%;
